@@ -12,7 +12,7 @@ public class PlayerMoveScript : MonoBehaviour
     [SerializeField] private Transform groundCheck;
     [SerializeField] private LayerMask groundLayer;
 
-
+    
     // Start is called before the first frame update
     void Start()
     {
