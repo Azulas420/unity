@@ -42,7 +42,7 @@ public class TurorialNPC : MonoBehaviour
         {
             playerIsClose = false;
             voicebtn.SetActive(false);
-            clip.Stop();
+            //clip.Stop();
         }
     }
 }
