@@ -162,6 +162,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Player: {fileID: 0}
   clip: {fileID: 5831596628156772188}
+  PlayerDeathEffect: {fileID: 8581231453269955277, guid: 7a791bc1a6a79e94aa7faeb060e60ccb, type: 3}
 --- !u!82 &5831596628156772188
 AudioSource:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public class KillingColiderScript : MonoBehaviour
     bool PlayerIsAlive = true;
     public GameObject Player;
     public AudioSource clip;
+    public GameObject PlayerDeathEffect;
 
     void Start()
     {
@@ -21,6 +22,7 @@ public class KillingColiderScript : MonoBehaviour
         {
             PlayerIsAlive = false;
             Destroy(Player);
+            Instantiate(PlayerDeathEffect, transform.position, Quaternion.identity);
             if (clip != null)
             {
                 clip.Play();
