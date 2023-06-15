@@ -9,6 +9,8 @@ public class TurorialNPC : MonoBehaviour
     public bool playerIsClose;
     public GameObject voicebtn;
     public AudioSource clip;
+    
+    
 
     // Update is called once per frame
     void Start()

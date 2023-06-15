@@ -6,7 +6,9 @@ public class BulletTurretLV1Script : MonoBehaviour
 {
     public float Range;
     public Transform Target;
-    bool Detected = false;
+    public bool playerIsClose = false;
+    Vector2 Direction;
+    public GameObject Gun;
 
     // Start is called before the first frame update
     void Start()
@@ -25,15 +27,30 @@ public class BulletTurretLV1Script : MonoBehaviour
 
         if(rayInfo)
         {
-            if(rauInfo.collider.gameObject.tag == "PLayer")
+            if(rayInfo.collider.gameObject.tag == "Player")
             {
-                if(Detected == false)
+                if(playerIsClose == false)
                 {
-                    Detected = true;
-                }
-
-                
+                    playerIsClose = true;
+                }          
+            }
+            else 
+            {
+                if(playerIsClose == true)
+                {
+                    playerIsClose = false;
+                    Debug.Log("coda");
+                }          
             }
         }
+        if(playerIsClose)
+        {
+            Gun.transform.up = Direction;
+        }
+    }
+
+    void OnDrawGizmosSelected()
+    {
+        Gizmos.DrawWireSphere(transform.position,Range);
     }
 }

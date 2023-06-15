@@ -6,8 +6,7 @@ using UnityEngine.Audio;
 
 public class KillingColiderScript : MonoBehaviour
 {
-
-    bool PlayerIsAlive = true;
+ 
     public GameObject Player;
     public AudioSource clip;
     public GameObject PlayerDeathEffect;
@@ -20,7 +19,6 @@ public class KillingColiderScript : MonoBehaviour
     {
         if (Player != null && other.CompareTag("Player"))
         {
-            PlayerIsAlive = false;
             Destroy(Player);
             Instantiate(PlayerDeathEffect, transform.position, Quaternion.identity);
             if (clip != null)
