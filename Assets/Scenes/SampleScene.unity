@@ -195,7 +195,7 @@ GameObject:
   - component: {fileID: 351769495}
   - component: {fileID: 351769494}
   m_Layer: 0
-  m_Name: Circle
+  m_Name: BulletTurretLV1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1846,6 +1846,7 @@ GameObject:
   - component: {fileID: 2117507968}
   - component: {fileID: 2117507967}
   - component: {fileID: 2117507966}
+  - component: {fileID: 2117507969}
   m_Layer: 0
   m_Name: MG
   m_TagString: Untagged
@@ -1865,10 +1866,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 387299ede767de940b5866809b5ba2ee, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  Range: 5
-  Target: {fileID: 1961926034}
   playerIsClose: 0
-  Gun: {fileID: 2117507965}
+  Weapon: {fileID: 2117507965}
 --- !u!212 &2117507967
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1936,6 +1935,22 @@ Transform:
   m_Father: {fileID: 351769495}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180.01}
+--- !u!58 &2117507969
+CircleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2117507965}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.0000009536743, y: -0.00000047683716}
+  serializedVersion: 2
+  m_Radius: 10
 --- !u!1001 &62859512193818732
 PrefabInstance:
   m_ObjectHideFlags: 0
