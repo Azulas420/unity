@@ -1196,6 +1196,10 @@ PrefabInstance:
       propertyPath: Player
       value: 
       objectReference: {fileID: 1961926030}
+    - target: {fileID: 62859512820453974, guid: 03aa40cc33f42814485e3ad817c2a92c, type: 3}
+      propertyPath: PlayerDeathEffect
+      value: 
+      objectReference: {fileID: 8581231453269955277, guid: 7a791bc1a6a79e94aa7faeb060e60ccb, type: 3}
     - target: {fileID: 62859512820453975, guid: 03aa40cc33f42814485e3ad817c2a92c, type: 3}
       propertyPath: MaxDistance
       value: 5
@@ -1846,7 +1850,6 @@ GameObject:
   - component: {fileID: 2117507968}
   - component: {fileID: 2117507967}
   - component: {fileID: 2117507966}
-  - component: {fileID: 2117507969}
   m_Layer: 0
   m_Name: MG
   m_TagString: Untagged
@@ -1868,6 +1871,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   playerIsClose: 0
   Weapon: {fileID: 2117507965}
+  Range: 10
+  Target: {fileID: 1961926034}
 --- !u!212 &2117507967
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -1935,22 +1940,6 @@ Transform:
   m_Father: {fileID: 351769495}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: -180.01}
---- !u!58 &2117507969
-CircleCollider2D:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2117507965}
-  m_Enabled: 1
-  m_Density: 1
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_UsedByEffector: 0
-  m_UsedByComposite: 0
-  m_Offset: {x: -0.0000009536743, y: -0.00000047683716}
-  serializedVersion: 2
-  m_Radius: 10
 --- !u!1001 &62859512193818732
 PrefabInstance:
   m_ObjectHideFlags: 0
