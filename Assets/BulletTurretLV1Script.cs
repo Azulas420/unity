@@ -12,16 +12,14 @@ public class BulletTurretLV1Script : MonoBehaviour
     public float Range;
     public float Force;
     public Transform ShootPoint;
-    public Transform ShootPoint2;
     public Transform? Target;
 
     Vector2 Direction;
 
-
     // Start is called before the first frame update
     void Start()
     {
-        Bullet.transform.up = Direction;
+
     }
 
     // Update is called once per frame
@@ -56,7 +54,7 @@ public class BulletTurretLV1Script : MonoBehaviour
                 }
             }
         }
-        if(playerIsClose)
+        if (playerIsClose)
         {
             Weapon.transform.up = Direction;
             if (Time.time > nextTimeToFire)
@@ -66,14 +64,13 @@ public class BulletTurretLV1Script : MonoBehaviour
             }
         }
     }
-
     void shoot()
     {
-        GameObject ShootIns = Instantiate(Bullet,ShootPoint.position, Quaternion.identity);
-        ShootIns.GetComponent<Rigidbody2D>().AddForce(Direction * Force);
+        Vector2 direction = (Vector2)Target.position - (Vector2)ShootPoint.position;
+        Quaternion rotation = Quaternion.LookRotation(Vector3.forward, direction);
 
-        GameObject ShootIns2 = Instantiate(Bullet, ShootPoint2.position, Quaternion.identity);
-        ShootIns2.GetComponent<Rigidbody2D>().AddForce(Direction * Force);
+        GameObject shootInstance = Instantiate(Bullet, ShootPoint.position, rotation);
+        shootInstance.GetComponent<Rigidbody2D>().AddForce(direction.normalized * Force);
 
         if (Target != null)
         {
