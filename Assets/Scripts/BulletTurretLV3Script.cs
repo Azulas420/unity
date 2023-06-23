@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletTurretLV2Script : MonoBehaviour
+public class BulletTurretLV3Script : MonoBehaviour
 {
     public bool playerIsClose;
     public GameObject Weapon;
@@ -13,9 +13,9 @@ public class BulletTurretLV2Script : MonoBehaviour
     public float Force;
     public Transform ShootPoint;
     public Transform ShootPoint2;
+    public Transform ShootPoint3;
     public Transform? Target;
     Vector2 Direction;
-
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +26,6 @@ public class BulletTurretLV2Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Target != null)
         {
 
@@ -76,6 +75,9 @@ public class BulletTurretLV2Script : MonoBehaviour
 
         GameObject shootInstance2 = Instantiate(Bullet, ShootPoint2.position, rotation);
         shootInstance2.GetComponent<Rigidbody2D>().AddForce(direction.normalized * Force);
+
+        GameObject shootInstance3 = Instantiate(Bullet, ShootPoint3.position, rotation);
+        shootInstance3.GetComponent<Rigidbody2D>().AddForce(direction.normalized * Force);
 
         if (Target != null)
         {

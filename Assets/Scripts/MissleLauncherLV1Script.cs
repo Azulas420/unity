@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class BulletTurretLV2Script : MonoBehaviour
+public class MissleLauncherLV1Script : MonoBehaviour
 {
     public bool playerIsClose;
     public GameObject Weapon;
@@ -12,10 +12,8 @@ public class BulletTurretLV2Script : MonoBehaviour
     public float Range;
     public float Force;
     public Transform ShootPoint;
-    public Transform ShootPoint2;
     public Transform? Target;
     Vector2 Direction;
-
 
     // Start is called before the first frame update
     void Start()
@@ -26,7 +24,6 @@ public class BulletTurretLV2Script : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
         if (Target != null)
         {
 
@@ -64,6 +61,7 @@ public class BulletTurretLV2Script : MonoBehaviour
                 shoot();
             }
         }
+        
     }
 
     void shoot()
@@ -73,9 +71,6 @@ public class BulletTurretLV2Script : MonoBehaviour
 
         GameObject shootInstance = Instantiate(Bullet, ShootPoint.position, rotation);
         shootInstance.GetComponent<Rigidbody2D>().AddForce(direction.normalized * Force);
-
-        GameObject shootInstance2 = Instantiate(Bullet, ShootPoint2.position, rotation);
-        shootInstance2.GetComponent<Rigidbody2D>().AddForce(direction.normalized * Force);
 
         if (Target != null)
         {
