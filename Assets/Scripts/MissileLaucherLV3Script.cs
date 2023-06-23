@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MissleLauncherLV1Script : MonoBehaviour
+public class MissileLaucherLV3Script : MonoBehaviour
 {
     public bool playerIsClose;
     public GameObject Weapon;
@@ -12,6 +12,8 @@ public class MissleLauncherLV1Script : MonoBehaviour
     public float Range;
     public float Force;
     public Transform ShootPoint;
+    public Transform ShootPoint2;
+    public Transform ShootPoint3;
     public Transform? Target;
     Vector2 Direction;
 
@@ -52,7 +54,7 @@ public class MissleLauncherLV1Script : MonoBehaviour
                 }
             }
         }
-        if(playerIsClose)
+        if (playerIsClose)
         {
             Weapon.transform.up = Direction;
             if (Time.time > nextTimeToFire)
@@ -61,9 +63,8 @@ public class MissleLauncherLV1Script : MonoBehaviour
                 shoot();
             }
         }
-        
-    }
 
+    }
     void shoot()
     {
         Vector2 direction = (Vector2)Target.position - (Vector2)ShootPoint.position;
@@ -71,6 +72,13 @@ public class MissleLauncherLV1Script : MonoBehaviour
 
         GameObject shootInstance = Instantiate(Bullet, ShootPoint.position, rotation);
         shootInstance.GetComponent<Rigidbody2D>().AddForce(direction.normalized * Force);
+
+        GameObject shootInstance2 = Instantiate(Bullet, ShootPoint2.position, rotation);
+        shootInstance2.GetComponent<Rigidbody2D>().AddForce(direction.normalized * Force);
+
+        GameObject shootInstance3 = Instantiate(Bullet, ShootPoint3.position, rotation);
+        shootInstance3.GetComponent<Rigidbody2D>().AddForce(direction.normalized * Force);
+
 
         if (Target != null)
         {
