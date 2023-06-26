@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class MissileScript : MonoBehaviour
 {
+    public GameObject Player;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -16,8 +18,9 @@ public class MissileScript : MonoBehaviour
         
     }
     
-     void OnCollisionEnter2D(Collision2D Col)
+    void OnCollisionEnter2D(Collision2D Col)
     {
         Destroy(this.gameObject);
+        Debug.Log("lul");
     }
 }

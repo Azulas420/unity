@@ -107,7 +107,7 @@ MonoBehaviour:
   Force: 2300
   ShootPoint: {fileID: 6103676610168966802}
   ShootPoint2: {fileID: 3476595111109178280}
-  Target: {fileID: 0}
+  Target: {fileID: 7545852774046145526, guid: 093fbac0a0f23304a94e9ddd74386c99, type: 3}
 --- !u!1 &6103676610168966805
 GameObject:
   m_ObjectHideFlags: 0

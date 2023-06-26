@@ -221,4 +221,4 @@ MonoBehaviour:
   Range: 10
   Force: 2000
   ShootPoint: {fileID: 1547856300758213344}
-  Target: {fileID: 0}
+  Target: {fileID: 7545852774046145526, guid: 093fbac0a0f23304a94e9ddd74386c99, type: 3}

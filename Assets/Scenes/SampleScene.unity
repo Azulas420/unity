@@ -135,6 +135,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 174176218}
     m_Modifications:
+    - target: {fileID: 6103676608993733352, guid: 8ad8d9d4333c95c4bb049960e6b4d7ca, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1928327467}
     - target: {fileID: 6103676610692489729, guid: 8ad8d9d4333c95c4bb049960e6b4d7ca, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -871,6 +875,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: MissileLauncherLV1
       objectReference: {fileID: 0}
+    - target: {fileID: 1547856300971467561, guid: f1724106297b2ec42ac7d034e944d63f, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1928327467}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f1724106297b2ec42ac7d034e944d63f, type: 3}
 --- !u!1001 &415470629
@@ -1307,6 +1315,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8827680414138558132, guid: ea49c95e0dcdad94297a187c2bd87900, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1928327467}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ea49c95e0dcdad94297a187c2bd87900, type: 3}
 --- !u!1001 &683158735
@@ -1316,6 +1328,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 174176218}
     m_Modifications:
+    - target: {fileID: 1597743613846411237, guid: 77ce2d165b9a1f84a8a7f742186b5d1d, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1928327467}
     - target: {fileID: 1597743614997328876, guid: 77ce2d165b9a1f84a8a7f742186b5d1d, type: 3}
       propertyPath: m_RootOrder
       value: 4
@@ -1956,6 +1972,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4786783346292587084, guid: dc7f0e8c733712b4ab857c9cb1cf4872, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1928327467}
     - target: {fileID: 6045369052065763343, guid: dc7f0e8c733712b4ab857c9cb1cf4872, type: 3}
       propertyPath: m_Name
       value: BulletTurretLV3
@@ -1979,6 +1999,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 174176218}
     m_Modifications:
+    - target: {fileID: 2928819625498401231, guid: 8b647fd59e6542146afcc2cb91931497, type: 3}
+      propertyPath: Target
+      value: 
+      objectReference: {fileID: 1928327467}
     - target: {fileID: 2928819626180852994, guid: 8b647fd59e6542146afcc2cb91931497, type: 3}
       propertyPath: m_RootOrder
       value: 0
@@ -2132,6 +2156,11 @@ Transform:
 --- !u!1 &1928327466 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 7545852774046145514, guid: 093fbac0a0f23304a94e9ddd74386c99, type: 3}
+  m_PrefabInstance: {fileID: 382121383}
+  m_PrefabAsset: {fileID: 0}
+--- !u!4 &1928327467 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 7545852774046145526, guid: 093fbac0a0f23304a94e9ddd74386c99, type: 3}
   m_PrefabInstance: {fileID: 382121383}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &2030249395
