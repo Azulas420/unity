@@ -13,7 +13,6 @@ public class BulletTurretLV1Script : MonoBehaviour
     public float Force;
     public Transform ShootPoint;
     public Transform? Target;
-
     Vector2 Direction;
 
     // Start is called before the first frame update
@@ -64,6 +63,7 @@ public class BulletTurretLV1Script : MonoBehaviour
             }
         }
     }
+    
     void shoot()
     {
         Vector2 direction = (Vector2)Target.position - (Vector2)ShootPoint.position;
