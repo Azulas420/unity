@@ -24,11 +24,7 @@ public class KillingColiderScript : MonoBehaviour
             if (clip != null)
             {
                 clip.Play();
-            }
-          
-
+            }   
         }
     }
-
-
 }

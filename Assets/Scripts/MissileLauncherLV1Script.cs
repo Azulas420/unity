@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MissleLauncherLV1Script : MonoBehaviour
+public class MissileLauncherLV1Script : MonoBehaviour
 {
     public bool playerIsClose;
     public GameObject Weapon;

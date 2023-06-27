@@ -1,10 +1,11 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class BulletScript : MonoBehaviour
-{   
-    
+{
+    public GameObject BulletDeathEffect;
 
     // Start is called before the first frame update
     void Start()
@@ -20,7 +21,7 @@ public class BulletScript : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        Destroy(this.gameObject);
+        Destroy(this.gameObject);    
     }
 
 }
