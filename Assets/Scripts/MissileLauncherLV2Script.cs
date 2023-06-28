@@ -53,7 +53,7 @@ public class MissileLauncherLV2Script : MonoBehaviour
                 }
             }
         }
-        if (playerIsClose)
+        if (playerIsClose && Target != null)
         {
             Weapon.transform.up = Direction;
             if (Time.time > nextTimeToFire)

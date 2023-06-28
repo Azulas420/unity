@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class BulletScript : MonoBehaviour
 {
-    public GameObject BulletDeathEffect;
+    
 
     // Start is called before the first frame update
     void Start()

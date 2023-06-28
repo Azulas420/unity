@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
+using UnityEngine.SceneManagement;
 
 public class FinishScript : MonoBehaviour
 {
@@ -18,15 +19,15 @@ public class FinishScript : MonoBehaviour
     {
         if(other.CompareTag("Player"))
         {
+            Invoke("CompleteLevel", 3f);
             playerIsClose = true;
             FinishSound.Play();
-            CompleteLevel();
         }
     }
 
     private void CompleteLevel()
     {
-
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
     
 }
