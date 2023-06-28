@@ -652,6 +652,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f09c966b22b4490419a9a9c86d9f8497, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerIsDead: 0
 --- !u!1001 &471906700
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2515,7 +2516,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 793811897391851145, guid: da2077c803141614fa7ba54caf43317b, type: 3}
       propertyPath: m_Volume
-      value: 0.604
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 4744172325226315172, guid: da2077c803141614fa7ba54caf43317b, type: 3}
       propertyPath: m_Name
