@@ -318,7 +318,7 @@ PrefabInstance:
     - target: {fileID: 62859512820453974, guid: 03aa40cc33f42814485e3ad817c2a92c, type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 987730808}
     - target: {fileID: 62859512820453978, guid: 03aa40cc33f42814485e3ad817c2a92c, type: 3}
       propertyPath: m_Name
       value: Spikes (6)
@@ -343,7 +343,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1597743614997328876, guid: 77ce2d165b9a1f84a8a7f742186b5d1d, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1597743614997328876, guid: 77ce2d165b9a1f84a8a7f742186b5d1d, type: 3}
       propertyPath: m_LocalPosition.x
@@ -540,7 +540,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7545852774046145526, guid: 093fbac0a0f23304a94e9ddd74386c99, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7545852774046145526, guid: 093fbac0a0f23304a94e9ddd74386c99, type: 3}
       propertyPath: m_LocalPosition.x
@@ -1309,6 +1309,11 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 798615742787514217, guid: 0dd32e23da608b04da48f53791978b97, type: 3}
   m_PrefabInstance: {fileID: 909832657}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &987730808 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7545852774046145514, guid: 093fbac0a0f23304a94e9ddd74386c99, type: 3}
+  m_PrefabInstance: {fileID: 317720113}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1039819436
 GameObject:
   m_ObjectHideFlags: 0
@@ -1743,7 +1748,7 @@ PrefabInstance:
     - target: {fileID: 62859512820453974, guid: 03aa40cc33f42814485e3ad817c2a92c, type: 3}
       propertyPath: Player
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 987730808}
     - target: {fileID: 62859512820453978, guid: 03aa40cc33f42814485e3ad817c2a92c, type: 3}
       propertyPath: m_Name
       value: Spikes (5)
