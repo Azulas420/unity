@@ -22,6 +22,7 @@ public class DeathScreenScript : MonoBehaviour
     public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+        Debug.Log("helloow asdas");
     }
 
     public void Quit()
