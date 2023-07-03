@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5553d8f0f9820e842880f6c4d50b45ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  deathscreen: {fileID: 3203392796301011754, guid: 7124dfa2432ae4d4daccc4d7aeaf1265, type: 3}
 --- !u!50 &-1131547796468807851
 Rigidbody2D:
   serializedVersion: 4

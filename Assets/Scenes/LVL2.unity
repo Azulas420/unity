@@ -415,6 +415,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6491891542305198192, guid: 093fbac0a0f23304a94e9ddd74386c99, type: 3}
+      propertyPath: deathscreen
+      value: 
+      objectReference: {fileID: 1041008847}
     - target: {fileID: 7545852774046145514, guid: 093fbac0a0f23304a94e9ddd74386c99, type: 3}
       propertyPath: m_Name
       value: Player
@@ -998,19 +1002,6 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7545852774046145526, guid: 093fbac0a0f23304a94e9ddd74386c99, type: 3}
   m_PrefabInstance: {fileID: 53870836}
   m_PrefabAsset: {fileID: 0}
---- !u!114 &421342767
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 46111530}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f09c966b22b4490419a9a9c86d9f8497, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  playerIsDead: 0
 --- !u!1 &504950654
 GameObject:
   m_ObjectHideFlags: 0
@@ -2682,6 +2673,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: DeathScreen
       objectReference: {fileID: 0}
+    - target: {fileID: 3203392796301011754, guid: 7124dfa2432ae4d4daccc4d7aeaf1265, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3203392796301011766, guid: 7124dfa2432ae4d4daccc4d7aeaf1265, type: 3}
       propertyPath: m_Pivot.x
       value: 0
@@ -2768,6 +2763,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7124dfa2432ae4d4daccc4d7aeaf1265, type: 3}
+--- !u!1 &1041008847 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3203392796301011754, guid: 7124dfa2432ae4d4daccc4d7aeaf1265, type: 3}
+  m_PrefabInstance: {fileID: 1041008846}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1095312788
 PrefabInstance:
   m_ObjectHideFlags: 0

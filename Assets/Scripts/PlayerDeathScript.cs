@@ -5,11 +5,12 @@ using UnityEngine;
 public class PlayerDeathScript : MonoBehaviour
 {    
     public bool playerIsDead;
+    public GameObject deathscreen;
 
     // Start is called before the first frame update
     void Start()
     {
-        
+        deathscreen.SetActive(false);
     }
 
     // Update is called once per frame
@@ -23,6 +24,7 @@ public class PlayerDeathScript : MonoBehaviour
                 playerIsDead = true;
                 Destroy (col.gameObject);
                 Destroy (gameObject);
+                deathscreen.SetActive(true);
             }
         }
     

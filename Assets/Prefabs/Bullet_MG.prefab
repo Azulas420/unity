@@ -245,4 +245,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89a91039ca15e0a4ba2b62260e9893a1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  BulletDeathEffect: {fileID: 0}
+  deathscreen: {fileID: 3203392796301011754, guid: 7124dfa2432ae4d4daccc4d7aeaf1265, type: 3}

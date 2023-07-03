@@ -4,12 +4,10 @@ using UnityEngine;
 
 public class MissileScript : MonoBehaviour
 {
-    
 
     // Start is called before the first frame update
     void Start()
-    {
-        
+    { 
     }
 
     // Update is called once per frame
@@ -19,7 +17,7 @@ public class MissileScript : MonoBehaviour
     }
     
      private void OnCollisionEnter2D(Collision2D collision)
-    {
+     {
         Destroy(this.gameObject);   
-    }
+     }
 }

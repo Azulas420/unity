@@ -283,7 +283,7 @@ GameObject:
   - component: {fileID: 510722512}
   - component: {fileID: 510722511}
   - component: {fileID: 510722510}
-  - component: {fileID: 510722509}
+  - component: {fileID: 510722513}
   m_Layer: 5
   m_Name: Play
   m_TagString: Untagged
@@ -312,18 +312,6 @@ RectTransform:
   m_AnchoredPosition: {x: 42, y: 5}
   m_SizeDelta: {x: 504.3341, y: 105.1945}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &510722509
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 510722507}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cd40f7ba9281bec40a9c20d6a314228b, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &510722510
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -368,9 +356,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 510722509}
-        m_TargetAssemblyTypeName: StartMenuScript, Assembly-CSharp
-        m_MethodName: StartGame
+      - m_Target: {fileID: 510722513}
+        m_TargetAssemblyTypeName: EndMenu, Assembly-CSharp
+        m_MethodName: RestartGame
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -418,6 +406,18 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 510722507}
   m_CullTransparentMesh: 1
+--- !u!114 &510722513
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 510722507}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2fe56de0a95ed614fba2afa5ff624e80, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &944344775
 GameObject:
   m_ObjectHideFlags: 0
@@ -546,10 +546,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -686,7 +686,7 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 1391365656}
         m_TargetAssemblyTypeName: EndMenu, Assembly-CSharp
-        m_MethodName: 
+        m_MethodName: Quit
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
