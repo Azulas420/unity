@@ -12,21 +12,16 @@ public class PlayerDeathScript : MonoBehaviour
     {
         deathscreen.SetActive(false);
     }
-
-    // Update is called once per frame
-    void Update()
+ 
+    void OnCollisionEnter2D (Collision2D col)
     {
-    }  
-        void OnCollisionEnter2D (Collision2D col)
+        if (col.gameObject.tag.Equals ("Bullet") && !playerIsDead)
         {
-            if (col.gameObject.tag.Equals ("Bullet") && !playerIsDead)
-            {
-                playerIsDead = true;
-                Destroy (col.gameObject);
-                Destroy (gameObject);
-                deathscreen.SetActive(true);
-            }
+            playerIsDead = true;
+            Destroy (col.gameObject);
+            Destroy (gameObject);
+            deathscreen.SetActive(true);
         }
-    
+    }  
 }
 

@@ -184,6 +184,7 @@ MonoBehaviour:
   Player: {fileID: 7545852774046145514, guid: 093fbac0a0f23304a94e9ddd74386c99, type: 3}
   clip: {fileID: 62859512820453975}
   PlayerDeathEffect: {fileID: 8581231453269955277, guid: 7a791bc1a6a79e94aa7faeb060e60ccb, type: 3}
+  deathscreen: {fileID: 0}
 --- !u!82 &62859512820453975
 AudioSource:
   m_ObjectHideFlags: 0

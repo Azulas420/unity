@@ -10,10 +10,12 @@ public class KillingColiderScript : MonoBehaviour
     public GameObject Player;
     public AudioSource clip;
     public GameObject PlayerDeathEffect;
+    public GameObject deathscreen;
 
     void Start()
     {
         clip = GetComponent<AudioSource>();
+        deathscreen.SetActive(false);
     }
     private void OnTriggerEnter2D(Collider2D other)
     {
@@ -21,6 +23,7 @@ public class KillingColiderScript : MonoBehaviour
         {
             Destroy(Player);
             Instantiate(PlayerDeathEffect, transform.position, Quaternion.identity);
+            deathscreen.SetActive(true);
             if (clip != null)
             {
                 clip.Play();
