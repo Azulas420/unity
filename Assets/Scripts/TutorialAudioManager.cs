@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.Audio;
 
-public class AudioManager : MonoBehaviour
+public class TutorialAudioManager : MonoBehaviour
 {
     public AudioSource TMusic;
 

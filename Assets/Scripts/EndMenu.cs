@@ -5,13 +5,20 @@ using UnityEngine.SceneManagement;
 
 public class EndMenu : MonoBehaviour
 {
+    
+
     public void Quit()
     {
         Application.Quit();
     }
 
-    public void RestartGame()
+    public void RestartGameFromBeginning()
     {
         SceneManager.LoadScene("StartScreen");
+    }
+
+    public void RestartLVL3()
+    {
+        SceneManager.LoadScene("LVL3");
     }
 }
