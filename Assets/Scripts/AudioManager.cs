@@ -5,35 +5,36 @@ using UnityEngine.SceneManagement;
 
 public class AudioManager : MonoBehaviour
 {
-    public AudioSource Music;
+    public AudioSource Music; // O AudioSource é responsável pela reprodução de áudio
+    public AudioClip backgroundMusic; // A musica de funda a ser reproduzida
 
-    public AudioClip backgroundMusic;
-
-    public static AudioManager instance;
+    public static AudioManager instance; // Referência estática para a instância do AudioManager
 
     private void Awake()
     {
         if (instance == null)
         {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
+            instance = this; // Define a instância atual do AudioManager
+            DontDestroyOnLoad(gameObject); // Evita que o objeto seja destruído ao carregar uma nova cena
         }
         else
         {
-            Destroy(gameObject);
+            Destroy(gameObject); // Se já existe uma instância, destrói o objeto atual
         }
     }
-    // Start is called before the first frame update
+
+    
     void Start()
     {
-        Music.clip = backgroundMusic;
-        Music.Play();
+        Music.clip = backgroundMusic; // Atribui a musica de fundo ao componente AudioSource
+        Music.Play(); // Reproduz a musica
     }
 
-    // Update is called once per frame
+   
     void Update()
     {
+        // Verifica se a cena ativa tem o nome "EndGame"
         if (SceneManager.GetActiveScene().name == "EndGame")
-            Music.GetComponent<AudioSource>().Pause();           
+            Music.GetComponent<AudioSource>().Pause(); // Pausa a reprodução do áudio
     }
 }

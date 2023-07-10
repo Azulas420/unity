@@ -5,20 +5,17 @@ using UnityEngine.Audio;
 
 public class TutorialAudioManager : MonoBehaviour
 {
-    public AudioSource TMusic;
+    public AudioSource TMusic; // Referência ao componente AudioSource para a música do tutorial
+    public AudioClip backgroundMusic; // Referência ao clipe de áudio da música de fundo
 
-    public AudioClip backgroundMusic;
-
-    // Start is called before the first frame update
     void Start()
     {
-       TMusic.clip = backgroundMusic;
-       TMusic.Play();
+        TMusic.clip = backgroundMusic; // Define o clipe de áudio da música de fundo para o componente AudioSource
+        TMusic.Play(); // Toca a música de fundo
     }
 
-    // Update is called once per frame
     void Update()
     {
-        
+        // Nada a ser feito no Update() neste script
     }
 }
