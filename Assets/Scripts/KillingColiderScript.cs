@@ -8,8 +8,8 @@ public class KillingColiderScript : MonoBehaviour
 {
     public GameObject Player; // Referência ao objeto do jogador
     public AudioSource clip; // Componente AudioSource para reprodução de som
-    public GameObject PlayerDeathEffect; // Efeito de morte do jogador
-    public GameObject deathscreen; // Tela de morte
+    public GameObject PlayerDeathEffect; // Efeito de particulas de morte do jogador
+    public GameObject deathscreen; // Menu de morte do Player
 
     void Start()
     {

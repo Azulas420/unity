@@ -12,13 +12,7 @@ public class PlayerMoveScript : MonoBehaviour
     [SerializeField] private Transform groundCheck; // Referência ao objeto usado para verificar se o jogador está no chão
     [SerializeField] private LayerMask groundLayer; // Camada que representa o chão
 
-    // Start is called before the first frame update
-    void Start()
-    {
-        // Nada a ser feito no Start()
-    }
 
-    // Update is called once per frame
     void Update()
     {
         horizontal = Input.GetAxisRaw("Horizontal"); // Obtém o valor do movimento horizontal do jogador
@@ -43,7 +37,7 @@ public class PlayerMoveScript : MonoBehaviour
 
     private bool IsGrounded()
     {
-        // Verifica se há um objeto de chão abaixo do jogador usando um círculo de detecção
+        // Verifica se há um objeto de chão abaixo do jogador usando um círculo de deteção
         return Physics2D.OverlapCircle(groundCheck.position, 0.2f, groundLayer);
     }
 }

@@ -35,6 +35,10 @@ public class AudioManager : MonoBehaviour
     {
         // Verifica se a cena ativa tem o nome "EndGame"
         if (SceneManager.GetActiveScene().name == "EndGame")
+        {
             Music.GetComponent<AudioSource>().Pause(); // Pausa a reprodução do áudio
+            Destroy(this.gameObject);
+        }
+            
     }
 }

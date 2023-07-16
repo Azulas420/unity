@@ -7,17 +7,14 @@ public class MovingPlatformScript : MonoBehaviour
     public float speed; // Velocidade da plataforma em unidades por segundo
     public int startingPoint; // Índice do ponto inicial da plataforma
     public Transform[] points; // Lista de transformações que representam os pontos para onde a plataforma se moverá
-
     private int i; // Índice atual do ponto
 
-    // Start is called before the first frame update
     void Start()
     {
         // Define a posição inicial da plataforma como a posição do ponto de partida
         transform.position = points[startingPoint].position;
     }
 
-    // Update is called once per frame
     void Update()
     {
         // Verifica se a plataforma chegou perto o suficiente do ponto atual
