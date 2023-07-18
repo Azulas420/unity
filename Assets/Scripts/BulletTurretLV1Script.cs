@@ -14,12 +14,7 @@ public class BulletTurretLV1Script : MonoBehaviour
     public Transform ShootPoint; // Ponto de origem do disparo
     public Transform? Target; // Alvo da torre
     Vector2 Direction; // Direção para o alvo
-
-    // Start is called before the first frame update
-    void Start()
-    {
-        // O código de inicialização pode ser adicionado aqui, se necessário
-    }
+   
 
     // Update is called once per frame
     void Update()
